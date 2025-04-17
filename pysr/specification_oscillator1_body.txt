@@ -1,0 +1,84 @@
+"""
+Find the mathematical function skeleton that represents acceleration in a damped nonlinear oscillator system with driving force, given data on position, and velocity. 
+"""
+
+
+import numpy as np
+
+#Initialize parameters
+MAX_NPARAMS = 10
+params = [1.0]*MAX_NPARAMS
+
+
+@evaluate.run
+def evaluate(data: dict) -> float:
+    """ Evaluate the equation on data observations."""
+    
+    # Load data observations
+    inputs, outputs = data['inputs'], data['outputs']
+    x, v = inputs[:,0], inputs[:,1]
+    
+    # Optimize parameters based on data
+    from scipy.optimize import minimize
+    def loss(params):
+        y_pred = equation(x, v, params)
+        return np.mean((y_pred - outputs) ** 2)
+
+    loss_partial = lambda params: loss(params)
+    result = minimize(loss_partial, [1.0]*MAX_NPARAMS, method='BFGS')
+    
+    # Return evaluation score
+    optimized_params = result.x
+    loss = result.fun
+
+    if np.isnan(loss) or np.isinf(loss):
+        return None
+    else:
+        return -loss
+
+
+
+@equation.evolve
+def equation(x: jnp.ndarray, v: jnp.ndarray, params: jnp.ndarray) -> np.jndarray:
+    """ Mathematical function for acceleration in a damped nonlinear oscillator
+
+    Args:
+        x: A numpy array representing observations of current position.
+        v: A numpy array representing observations of velocity.
+        params: Array of numeric constants or parameters to be optimized
+
+    Return:
+        A numpy array representing acceleration as the result of applying the mathematical function to the inputs.
+    """
+    dv = params[0] * x  +  params[1] * v  + params[2]
+    return dv
+
+
+# === INITIAL BODIES START ===
+
+# --- BODY START ---
+dv = x*(params[0])
+return dv
+# --- BODY END ---
+
+# --- BODY START ---
+dv = jnp.exp(v)*x*(params[0])
+return dv
+# --- BODY END ---
+
+# --- BODY START ---
+dv = jnp.sin(x + x + params[0])*(-v - params[1])*params[2]
+return dv
+# --- BODY END ---
+
+# --- BODY START ---
+dv = jnp.exp(jnp.sin(v*params[0]))*x*(params[1])
+return dv
+# --- BODY END ---
+
+# --- BODY START ---
+dv = (-v - params[0])*jnp.sin(x + x)*params[1]
+return dv
+# --- BODY END ---
+
+# === INITIAL BODIES END ===
