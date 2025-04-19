@@ -57,27 +57,27 @@ def equation(x: np.ndarray, v: np.ndarray, params: np.ndarray) -> np.ndarray:
 # === INITIAL BODIES START ===
 
 # --- BODY START ---
-dv = np.exp(v)*x*(params[0])
+dv = params[0]*x*(x + v - params[1]) + v*(x + params[2]) + np.sin(params[3]*x)
 return dv
 # --- BODY END ---
 
 # --- BODY START ---
-dv = x*(params[0])*np.exp(v*params[1])
+dv = params[0]*x*(x + v) + v*(x + params[1]) + np.sin(v) + params[2]
 return dv
 # --- BODY END ---
 
 # --- BODY START ---
-dv = (v - params[0])*x*(params[1]) - np.sin(x)
+dv = params[0]*x*(x + v) + v*(x + params[1]) + np.sin(v)
 return dv
 # --- BODY END ---
 
 # --- BODY START ---
-dv = x*(params[0])*np.exp(np.sin(v*params[1]))
+dv = params[0]*v + params[1]*(params[2]*x + v)*(x - params[3])
 return dv
 # --- BODY END ---
 
 # --- BODY START ---
-dv = np.sin(x)*(params[0])
+dv = params[0]*x*(x + v) + v*(x + params[1])
 return dv
 # --- BODY END ---
 

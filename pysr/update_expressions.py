@@ -1,7 +1,9 @@
 import re
 import numpy as np
+import sympy
 from pysr import PySRRegressor
 from typing import List, Tuple, Dict, Optional, Union
+import shutil
 
 class ExpressionUpdater:
     def __init__(self, spec_file_path: str, dataset: Optional[Dict] = None):
@@ -76,19 +78,12 @@ class ExpressionUpdater:
         
         def replace_with_param(match):
             nonlocal param_counter
-            number = match.group(0)
             current = param_counter
             param_counter += 1
-            if number.startswith('/'):
-                return f"*params[{current}]"
-            else:
-                return f"params[{current}]"
-
-        # 1. 首先匹配除法形式的数字
-        expr = re.sub(r'/(-?\d+\.?\d*)', replace_with_param, expr)
+            return f"params[{current}]"
         
-        # 2. 然后匹配其他数字（排除科学记数法中的指数）
-        expr = re.sub(r'(?<![e|E])(?<!/)-?\d+\.?\d*(?![e|E]\d+)', replace_with_param, expr)
+        # 匹配所有数字（排除科学记数法中的指数）
+        expr = re.sub(r'(?<![e|E])-?\d+\.?\d*(?![e|E]\d+)', replace_with_param, expr)
         
         return expr
     
@@ -129,14 +124,19 @@ class ExpressionUpdater:
             expr = sorted_equations.iloc[i]
             sympy_expr = str(expr['sympy_format'])
             
-            # 1. 替换变量名
+            # 1. 转换为sympy表达式并简化
+            sympy_expr = sympy.sympify(sympy_expr)
+            sympy_expr = sympy.simplify(sympy_expr)
+            sympy_expr = str(sympy_expr)
+            
+            # 2. 替换变量名
             for old_var, new_var in self.var_mapping.items():
                 sympy_expr = sympy_expr.replace(old_var, new_var)
             
-            # 2. 替换数学函数
+            # 3. 替换数学函数
             sympy_expr = self._replace_math_functions(sympy_expr)
             
-            # 3. 替换常数为params数组项
+            # 4. 替换常数为params数组项
             sympy_expr = self._replace_constants_with_params(sympy_expr)
             
             # 构建完整的函数体
@@ -196,6 +196,8 @@ class ExpressionUpdater:
         
         # 配置 PySR
         model = PySRRegressor(
+            temp_equation_file=False,  # 不保存方程式文件
+            delete_tempfiles=True,  # 删除临时文件
             niterations=40,
             binary_operators=["+", "*", "-", "/"],
             unary_operators=["sin", "cos", "exp", "log"],
@@ -211,10 +213,14 @@ class ExpressionUpdater:
         print("开始训练符号回归模型...")
         model.fit(X, y)
         print("模型训练完成！")
-        
+
         # 更新文件
         self.update_file(model)
 
+        shutil.rmtree("outputs", ignore_errors=True)
+        shutil.rmtree("pysr_ws", ignore_errors=True)
+        
+        
 def update_expressions(spec_file_path: str, model: Optional[Union[PySRRegressor, Dict]] = None, top_n: int = 5) -> None:
     """更新指定文件中的表达式
     
