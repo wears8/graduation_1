@@ -1,0 +1,74 @@
+2025-04-19 17:20:16,881 - pyswarms.single.global_best - INFO - Optimize for 300 iters with {'c1': 1.49445, 'c2': 1.49445, 'w': 0.729}
+2025-04-19 17:22:26,486 - pyswarms.single.global_best - INFO - Optimize for 300 iters with {'c1': 1.49445, 'c2': 1.49445, 'w': 0.729}
+2025-04-19 17:22:31,364 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 0.0026915128271722457, best pos: [-0.44435642  2.25779168 -1.53700149 -2.68340288 -1.04951613  1.54820348
+ -1.24708032  0.01804788  8.79322145  2.53255908]
+2025-04-19 17:22:31,368 - pyswarms.single.global_best - INFO - Optimize for 300 iters with {'c1': 1.49445, 'c2': 1.49445, 'w': 0.729}
+2025-04-19 17:22:35,883 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 4.4119267826358145e-08, best pos: [-3.00092816e-01 -9.99996964e-01 -1.00370293e+00 -4.96719395e-01
+ -4.99576616e+00  5.81625288e-01  4.05509352e-01  6.62324496e-05
+  7.80771039e+00 -6.36326923e+00]
+2025-04-19 17:23:52,991 - pyswarms.single.global_best - INFO - Optimize for 300 iters with {'c1': 1.49445, 'c2': 1.49445, 'w': 0.729}
+2025-04-19 17:23:57,872 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 0.0026915186089951915, best pos: [-0.44424636  2.25779299 -1.53577194 -2.67968684 -1.05071037  1.52159913
+ -1.27415759  0.01801575  2.15939191  1.65881033]
+2025-04-19 17:23:57,877 - pyswarms.single.global_best - INFO - Optimize for 300 iters with {'c1': 1.49445, 'c2': 1.49445, 'w': 0.729}
+2025-04-19 17:24:02,690 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 2.7524493330962185e-07, best pos: [-2.99768768e-01 -1.00000219e+00 -1.00176177e+00 -5.01161942e-01
+ -5.01083263e+00  7.28687284e-02 -2.12848241e+00 -1.21559349e-04
+  7.67920019e+00  8.85385580e+00]
+2025-04-19 17:24:17,148 - pyswarms.single.global_best - INFO - Optimize for 300 iters with {'c1': 1.49445, 'c2': 1.49445, 'w': 0.729}
+2025-04-19 17:24:21,981 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 0.008855897716624138, best pos: [ 3.41617573e-01  2.18378687e+00 -1.02941010e+00  2.38339333e+00
+ -1.87513609e+00  3.76460295e-03 -4.78340880e-01 -6.18381880e-03
+ -8.27970517e+00 -4.75817976e+00]
+2025-04-19 17:24:21,986 - pyswarms.single.global_best - INFO - Optimize for 300 iters with {'c1': 1.49445, 'c2': 1.49445, 'w': 0.729}
+2025-04-19 17:24:26,769 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 7.85379833292094e-07, best pos: [-3.00429330e-01 -1.00000954e+00 -9.97905226e-01 -5.07167748e-01
+ -4.98202212e+00  8.12750684e-01  1.55023387e+00  1.12586823e-04
+  5.06606394e+00  3.35899540e+00]
+2025-04-19 17:47:47,986 - pyswarms.single.global_best - INFO - Optimize for 300 iters with {'c1': 1.49445, 'c2': 1.49445, 'w': 0.729}
+2025-04-19 17:52:35,003 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 1.49445, 'c2': 1.49445, 'w': 0.729}
+2025-04-19 17:53:04,427 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 1.49445, 'c2': 1.49445, 'w': 0.729}
+2025-04-19 17:53:59,756 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 1.49445, 'c2': 1.49445, 'w': 0.729}
+2025-04-19 17:54:03,412 - pyswarms.single.global_best - INFO - Optimize for 100 iters with {'c1': 1.49445, 'c2': 1.49445, 'w': 0.729}
+2025-04-19 17:57:31,666 - pyswarms.single.global_best - INFO - Optimize for 300 iters with {'c1': 1.49445, 'c2': 1.49445, 'w': 0.729}
+2025-04-19 17:59:55,152 - pyswarms.single.global_best - INFO - Optimize for 300 iters with {'c1': 1.49445, 'c2': 1.49445, 'w': 0.729}
+2025-04-19 18:00:25,023 - pyswarms.single.global_best - INFO - Optimize for 300 iters with {'c1': 1.49445, 'c2': 1.49445, 'w': 0.729}
+2025-04-19 18:08:55,759 - pyswarms.single.global_best - INFO - Optimize for 300 iters with {'c1': 1.49445, 'c2': 1.49445, 'w': 0.729}
+2025-04-19 18:13:41,811 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 18:13:42,600 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 4.16048952077677e-17, best pos: [0.99999999 0.99999999]
+2025-04-19 18:14:58,406 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 18:15:14,975 - pyswarms.backend.generators - ERROR - Bounds and/or init_pos should be of size (2,)
+Traceback (most recent call last):
+  File "c:\anacoda\envs\pytorch\Lib\site-packages\pyswarms\backend\generators.py", line 81, in generate_swarm
+    pos = center * np.random.uniform(
+                   ^^^^^^^^^^^^^^^^^^
+  File "numpy\\random\\mtrand.pyx", line 1190, in numpy.random.mtrand.RandomState.uniform
+  File "_common.pyx", line 621, in numpy.random._common.cont
+  File "_common.pyx", line 538, in numpy.random._common.cont_broadcast_2
+  File "__init__.cython-30.pxd", line 831, in numpy.PyArray_MultiIterNew3
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (10, 2) and arg 1 with shape (10, 3).
+2025-04-19 18:15:36,093 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 18:15:36,847 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 0.0, best pos: [1.         5.89897386 2.42878032]
+2025-04-19 18:16:31,644 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 18:16:32,387 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 1.6872995205578798e-28, best pos: [ 1.          0.91133125 -0.95463671]
+2025-04-19 18:17:21,586 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 18:17:22,398 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 0.0, best pos: [1.         5.10970737 2.26046618]
+2025-04-19 18:18:00,857 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 18:18:01,701 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 32990.06333836062, best pos: [-8.15690338  1.26683513  3.37999803]
+2025-04-19 18:18:39,918 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 18:18:40,685 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 49157.516347822275, best pos: [-1.32126587  6.54688768  6.33860957]
+2025-04-19 18:25:29,354 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 18:26:00,655 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 18:28:26,363 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 18:29:07,375 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 18:31:08,820 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 18:36:33,607 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 19:24:22,080 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 19:24:36,608 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 19:25:32,193 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 19:26:19,977 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 19:27:27,122 - pyswarms.single.global_best - INFO - Optimize for 1000 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-04-19 19:32:38,016 - jax._src.xla_bridge - INFO - Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+2025-04-19 19:32:38,016 - jax._src.xla_bridge - INFO - Unable to initialize backend 'tpu': UNIMPLEMENTED: LoadPjrtPlugin is not implemented on windows yet.
+2025-04-19 19:49:59,536 - jax._src.xla_bridge - INFO - Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+2025-04-19 19:49:59,538 - jax._src.xla_bridge - INFO - Unable to initialize backend 'tpu': UNIMPLEMENTED: LoadPjrtPlugin is not implemented on windows yet.
+2025-04-19 20:15:20,464 - jax._src.xla_bridge - INFO - Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+2025-04-19 20:15:20,464 - jax._src.xla_bridge - INFO - Unable to initialize backend 'tpu': UNIMPLEMENTED: LoadPjrtPlugin is not implemented on windows yet.
+2025-04-19 21:36:51,666 - jax._src.xla_bridge - INFO - Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+2025-04-19 21:36:51,677 - jax._src.xla_bridge - INFO - Unable to initialize backend 'tpu': UNIMPLEMENTED: LoadPjrtPlugin is not implemented on windows yet.
