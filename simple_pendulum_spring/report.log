@@ -1,0 +1,10 @@
+2025-04-23 13:32:59,234 - pyswarms.backend.generators - ERROR - Bounds and/or init_pos should be of size (10,)
+Traceback (most recent call last):
+  File "d:\software_setup\anacoda\envs\pytorch\Lib\site-packages\pyswarms\backend\generators.py", line 67, in generate_swarm
+    raise ValueError("User-defined init_pos is out of bounds.")
+ValueError: User-defined init_pos is out of bounds.
+2025-04-23 13:33:09,670 - pyswarms.backend.generators - ERROR - Bounds and/or init_pos should be of size (10,)
+Traceback (most recent call last):
+  File "d:\software_setup\anacoda\envs\pytorch\Lib\site-packages\pyswarms\backend\generators.py", line 67, in generate_swarm
+    raise ValueError("User-defined init_pos is out of bounds.")
+ValueError: User-defined init_pos is out of bounds.
